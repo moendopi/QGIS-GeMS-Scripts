@@ -24,5 +24,6 @@ DO NOT ADD SPACES.</b> When you have entered all the desired feature classes, ty
 
 If you prefer not to add any aadditional or optional feature classes just type done when prompted for optional feature classes.
 
-<b>For GeMS_Create_
-If you prefer to just create a 
+<b>For GeMS_Create_FullGeodatabase</b>
+This script will take the same three pieces of information from the user, but will not prompt the user to any additional
+optional feature classes. It will instead just create a geopackage with all the defined GeMS Features (29 feature classes and tables). 
