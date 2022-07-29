@@ -1,8 +1,8 @@
 # GeMS-Create-Geopackage
 A command line Python script to automatically create GeMS compliant geopacackages for QGIS
 
-* For either of these scripts to run properly you need to install pygeopkg
-pip install pygeopkg
+*** For either of these scripts to run properly you need to install pygeopkg:
+<b>pip install pygeopkg</b>
 
 Do not run this script in QGIS. As it stands it will not work trying to run the script in QGIS. The sccript prompts for input which will cause the script 
 to crash in QGIS. This can be run through an IDE like Visual Studio Code or Geanie, or you can run the script through a terminal session.
