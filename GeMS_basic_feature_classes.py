@@ -6,8 +6,7 @@ from pygeopkg.shared.enumeration import GeometryType, SQLFieldTypes
 
 
 GeMS_basic_feature_class_fields = {
-    """Required features classes and tables:"""
-    
+        
     "MapUnitPolys": (
         Field('MapUnit', SQLFieldTypes.text, 10),
         Field('IdentityConfidence', SQLFieldTypes.text, 50),
@@ -75,8 +74,6 @@ GeMS_basic_feature_class_fields = {
         Field('DefinitionSourceID', SQLFieldTypes.text, 50),
         Field('Glossary_ID', SQLFieldTypes.text, 50),
     ),
-
-    """As-needed tables and feature classes"""
 
     "GenericPoints": (
         Field('Type', SQLFieldTypes.text, 254),
@@ -346,8 +343,6 @@ GeMS_basic_feature_class_fields = {
         Field('RepurposedSymbols_ID', SQLFieldTypes.text, 50),
     ),
 
-    """Optional features classes and tables as described in GeMS specs"""
-
     "CMUMapUnitPolys": (
         Field('MapUnit', SQLFieldTypes.text, 10),
         Field('Label', SQLFieldTypes.text, 50),
@@ -392,8 +387,6 @@ GeMS_basic_feature_class_fields = {
         Field('DataSourceID', SQLFieldTypes.text, 50),
         Field('StandardLithology_ID', SQLFieldTypes.text, 50),
     ),
-
-    """Optional feature classes not described in GeMS specs"""
 
     "FossilPoints": (
         Field('Type', SQLFieldTypes.text, 254),
