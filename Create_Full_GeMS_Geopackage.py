@@ -67,17 +67,17 @@ def create_data_sources_table():
 def create_glossary_table():
     gpkg.create_table('Glossary', fields=get_fields("Glossary"),description='')
 def create_generic_points():
-    gpkg.create_feature_class('GenericPoints', srs, fields=get_fields("GenericPoints"), shape_type=GeometryType.multi_point)
+    gpkg.create_feature_class('GenericPoints', srs, fields=get_fields("GenericPoints"), shape_type=GeometryType.point)
 def create_generic_samples():
-    gpkg.create_feature_class('GenericSamples', srs, fields=get_fields("GenericSamples"), shape_type=GeometryType.multi_point)
+    gpkg.create_feature_class('GenericSamples', srs, fields=get_fields("GenericSamples"), shape_type=GeometryType.point)
 def create_orientation_points():
-    gpkg.create_feature_class('OrientationPoints', srs, fields=get_fields("OrientationPoints"), shape_type=GeometryType.multi_point)
+    gpkg.create_feature_class('OrientationPoints', srs, fields=get_fields("OrientationPoints"), shape_type=GeometryType.point)
 def create_geochron_points():
-    gpkg.create_feature_class('GeochronPoints', srs, fields=get_fields("GeochronPoints"), shape_type=GeometryType.multi_point)
+    gpkg.create_feature_class('GeochronPoints', srs, fields=get_fields("GeochronPoints"), shape_type=GeometryType.point)
 def create_geochem_points():
-    gpkg.create_feature_class('GeochemPoints', srs, fields=get_fields("GeochemPoints"), shape_type=GeometryType.multi_point)
+    gpkg.create_feature_class('GeochemPoints', srs, fields=get_fields("GeochemPoints"), shape_type=GeometryType.point)
 def create_stations_points():
-    gpkg.create_feature_class('Stations', srs, fields=get_fields("Stations"), shape_type=GeometryType.multi_point)
+    gpkg.create_feature_class('Stations', srs, fields=get_fields("Stations"), shape_type=GeometryType.point)
 def create_geologic_lines():
     gpkg.create_feature_class('GeologicLines', srs, fields=get_fields("GeologicLines"), shape_type=GeometryType.multi_linestring)
 def create_cartographic_lines():
@@ -87,7 +87,7 @@ def create_iso_value_lines():
 def create_map_unit_lines():
     gpkg.create_feature_class('MapUnitLines', srs, fields=get_fields("MapUnitLines"), shape_type=GeometryType.multi_linestring)
 def create_map_unit_points():
-    gpkg.create_feature_class('MapUnitPoints', srs, fields=get_fields("MapUnitPoints"), shape_type=GeometryType.multi_point)
+    gpkg.create_feature_class('MapUnitPoints', srs, fields=get_fields("MapUnitPoints"), shape_type=GeometryType.point)
 def create_map_unit_overlay_polys():
     gpkg.create_feature_class('MapUnitOverlayPolys', srs, fields=get_fields("MapUnitOverlayPolys"), shape_type=GeometryType.multi_polygon)
 def create_overlay_polys():
@@ -101,7 +101,7 @@ def create_cmu_map_unit_polys():
 def create_cmu_lines():
     gpkg.create_feature_class('CMULines', srs, fields=get_fields("CMULines"), shape_type=GeometryType.multi_linestring)
 def create_cmu_points():
-    gpkg.create_feature_class('CMUPoints', srs, fields=get_fields("CMUPoints"), shape_type=GeometryType.multi_point)
+    gpkg.create_feature_class('CMUPoints', srs, fields=get_fields("CMUPoints"), shape_type=GeometryType.point)
 def create_misc_map_info():
     gpkg.create_table('MiscellaneousMapInformation', fields=get_fields("MiscellaneousMapInformation"),description='')
 def create_layer_list():
@@ -109,9 +109,9 @@ def create_layer_list():
 def create_standard_lithology():
     gpkg.create_table('StandardLithology', fields=get_fields("StandardLithology"),description='')
 def create_fossil_points():
-    gpkg.create_feature_class('FossilPoints', srs, fields=get_fields("FossilPoints"), shape_type=GeometryType.multi_point)
+    gpkg.create_feature_class('FossilPoints', srs, fields=get_fields("FossilPoints"), shape_type=GeometryType.point)
 def create_photo_points():
-    gpkg.create_feature_class('PhotoPoints', srs, fields=get_fields("PhotoPoints"), shape_type=GeometryType.multi_point)
+    gpkg.create_feature_class('PhotoPoints', srs, fields=get_fields("PhotoPoints"), shape_type=GeometryType.point)
 
 
 list_of_feature_classes = ['MapUnitPolys', 'ContactsAndFaults', 'MapUnitOverlayLines', 'DescriptionOfMapUnits', 'DataSources',\
