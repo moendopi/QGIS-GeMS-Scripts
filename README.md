@@ -32,6 +32,14 @@ This script will require the same three pieces of information from the user, but
 optional feature classes. It will instead just create a geopackage with all the defined GeMS Features (29 feature classes and tables). 
 
 # Create MapUnitPolys
-This take your contact lines and create polygons from them and add the necessary GeMS fields.
+This take your contact lines and create polygons of the bedrock from them and add the necessary GeMS fields.
 *** Note: lines need to being checked that there are no dangle where lines are to intersect. There needs to be a node at the intersection, and the lines must be split at the intersection. These type of error can be checked using the Topology Checker.
 
+# Create MapUnitOverlayPolys
+This takes your surficial lines and create surficial polygons. Topology checks mentioned above apply.
+
+# Create OverlayPolys
+This take any lines like water boundaries, isograd lines, sinkhole boundaries, etc., and create overlay polygons. Topology checks required. 
+
+# Split Concealed Contacts
+This script is useful for running after all ContactsAndFaults are finished. It will find where bedrock ContactsAndFaults intersect with surficial MapUnitOverlayLines (where surficial deposits or water would cover bedrock contact) and splits them. The contacts can then be selected by location where they are covered by surficial units and changed to concealed. One small note that I haven't figure out how to get around is the creation of lots of tiny or 0 length lines. These can be safely deleted. I suspect they are lines created when split on the point of intersection and thus have no length. 
