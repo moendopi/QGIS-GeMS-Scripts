@@ -30,3 +30,8 @@ If you prefer not to add any aadditional or optional feature classes just type d
 <b>For Create_Full_GeMS_Geopackage</b>
 This script will require the same three pieces of information from the user, but will not prompt the user with any additional
 optional feature classes. It will instead just create a geopackage with all the defined GeMS Features (29 feature classes and tables). 
+
+# Create MapUnitPolys
+This take your contact lines and create polygons from them and add the necessary GeMS fields.
+*** Note: lines need to being checked that there are no dangle where lines are to intersect. There needs to be a node at the intersection, and the lines must be split at the intersection. These type of error can be checked using the Topology Checker.
+
